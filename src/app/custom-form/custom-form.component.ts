@@ -44,12 +44,12 @@ export class CustomFormComponent extends DxComponentExtension implements OnInit,
   }
 
   ngAfterViewInit() {
-    this.itemsChildren.forEach(z => {
-      this.items.push(z);
-    });
   }
 
   ngAfterContentInit(): void {
+    this.itemsChildren.forEach(z => {
+      this.items.push(z);
+    });
   }
 
 
